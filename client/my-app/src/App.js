@@ -9,6 +9,7 @@ import VolleyBall from './pages/volleyBall.js';
 import TT from './pages/tt.js';
 import BasketBall from './pages/basketBall.js';
 import Badminton from './pages/badminton.js';
+import { useAuth0 } from "@auth0/auth0-react";
   
 function App() {
   return (

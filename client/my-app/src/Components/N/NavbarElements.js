@@ -3,32 +3,38 @@ import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
   
 export const Nav = styled.nav`
-  background: #63D471;
-  height: 85px;
+  background: #1b1b1b;
+  height: 80px;
   display: flex;
-  justify-content: space-between;
-  padding: 0.2rem calc((100vw - 1000px) / 2);
-  z-index: 12;
-  /* Third Nav */
-  /* justify-content: flex-start; */
-`;
-  
-export const NavLink = styled(Link)`
-  color: #808080;
-  display: flex;
+  justify-content: center;
   align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  padding: 10px 22px;
+  top: 0;
+  z-index: 10;
+`;
+
+export const NavLink = styled(Link)`
+  margin-right: 20px;
+  display: flex; 
+  color: #fff;
+  font-size: 1.5rem;
   text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
   cursor: pointer;
-  &.active {
-    color: #000000;
+  padding: 10px 22px;
+  border-radius: 4px;
+  align-items: center;
+
+  &:hover {
+    color: #5aff3d;
   }
 `;
-  
-export const Bars = styled(FaAdn)`
+
+export const Bars = styled.div`
   display: none;
-  color: #808080;
+  color: #fff;
+
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
@@ -39,48 +45,46 @@ export const Bars = styled(FaAdn)`
     cursor: pointer;
   }
 `;
-  
-export const NavMenu = styled.div`
+
+export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
-  margin-right: -24px;
-  /* Second Nav */
-  /* margin-right: 24px; */
-  /* Third Nav */
-  /* width: 100vw;
-  white-space: nowrap; */
+  list-style: none;
+  text-align: center;
+
   @media screen and (max-width: 768px) {
     display: none;
   }
 `;
-  
+
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
   margin-right: 24px;
-  /* Third Nav */
-  /* justify-content: flex-end;
-  width: 100vw; */
+
   @media screen and (max-width: 768px) {
     display: none;
   }
 `;
-  
+
 export const NavBtnLink = styled(Link)`
   border-radius: 4px;
-  background: #808080;
+  background: #5aff3d;
   padding: 10px 22px;
-  color: #000000;
-  outline: none;
+  color: #fff;
   border: none;
+  outline: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  /* Second Nav */
-  margin-left: 24px;
+  font-size: 1.2rem;
+
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
-    color: #808080;
+    color: #1b1b1b;
   }
+`;
+export const NavLinkWithGap = styled(NavLink)`
+  margin-right: 10px;
 `;
