@@ -32,7 +32,7 @@ const Badminton = () => {
       {data.map(item => {
           if(item.Sport==="Badminton"){
             return(
-          <tr key={item.ID}>
+            <tr key={item.ID}>
             <td>{item.ID}</td>
             <td>{item.NameOfEquipment}</td>
             <td>{item.PersonIssued}</td>

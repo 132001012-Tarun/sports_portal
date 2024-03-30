@@ -1,0 +1,39 @@
+/* styles.css */
+
+/* Style for the heading */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the paragraph */
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Container for game items */
+  .games-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Style for each game item */
+  .game-item {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  /* Style for game images */
+  .game-item img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Style for game names */
+  .game-item h3 {
+    margin-top: 10px;
+    font-size: 1.1rem;
+  }
+  

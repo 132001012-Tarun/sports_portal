@@ -1,7 +1,5 @@
 import React from 'react';
 import { useAuth0 } from "@auth0/auth0-react";
-import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import {
   Nav,
   NavLink,
@@ -28,7 +26,7 @@ const Navbar = (props) => {
           {isAuthenticated && (
             <>
               <li>
-              <NavLinkWithGap to="/cricket" onClick={() => console.log("Clicked on Cricket link")}>Cricket</NavLinkWithGap>
+              <NavLinkWithGap to="/cricket">Cricket</NavLinkWithGap>
               </li>
               <li>
                 <NavLinkWithGap to='/footBall'>FootBall</NavLinkWithGap>
